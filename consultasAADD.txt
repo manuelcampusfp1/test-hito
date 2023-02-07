@@ -1,0 +1,17 @@
+2 opciones
+	el número de llamadas recibidas totales
+db.historialClientes.countDocuments()
+	llamadas en una fecha dada
+db.historialClientes.find({fecha:ISODate("2020-03-20T23:00:00.000+00:00")}).count()
+
+datos que se muestran
+	cuantas llamadas por hardware
+			 por software
+	se ha realizado reparación en talleres
+	se soluciono el problema
+
+tecnicos
+	nombre cliente y ver datos de cliente e 
+	historial llamadas
+field_name: {
+        $gt: ISODate("date")
